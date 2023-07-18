@@ -19,7 +19,8 @@ export class HomePage {
     const cameraPreviewOptions: CameraPreviewOptions = {
       position: 'rear',
       parent: 'cameaPreview',
-      className: 'cameraPreview'
+      className: 'cameraPreview',
+      toBack: true
     };
     CameraPreview.start(cameraPreviewOptions);
     this.cameraActive = true;
